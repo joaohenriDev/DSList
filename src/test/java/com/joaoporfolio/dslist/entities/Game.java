@@ -1,27 +1,37 @@
-package com.joaoportfloio.dslist.entities;
+package com.joaoporfolio.dslist.entities;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
+
 
 import java.util.Objects;
+
 @Entity
 @Table(name = "tb_game")
 public class Game {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String title;
     @Column(name = "game_year")
     private Integer year;
     private String genre;
     private String platform;
     private String imgUrl;
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game(){
     }
 
-    public Game(long id, String title, Integer year, String genre, String platform, String imgUrl, String shortDescription, String longDescription) {
+    public Game(Long id, String title, Integer year, String genre, String platform, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
         this.year = year;
@@ -32,11 +42,11 @@ public class Game {
         this.longDescription = longDescription;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -100,11 +110,12 @@ public class Game {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Game game)) return false;
-        return getId() == game.getId();
+        return Objects.equals(getId(), game.getId());
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(getId());
     }
+
 }
