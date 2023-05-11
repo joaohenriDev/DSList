@@ -1,8 +1,8 @@
-package com.joaoporfolio.dslist.services;
+package com.joaoportfolio.dslist.services;
 
-import com.joaoporfolio.dslist.dto.GameMinDTO;
-import com.joaoporfolio.dslist.entities.Game;
-import com.joaoporfolio.dslist.repositories.GameRepository;
+import com.joaoportfolio.dslist.dto.GameMinDTO;
+import com.joaoportfolio.dslist.entities.Game;
+import com.joaoportfolio.dslist.repositories.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

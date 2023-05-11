@@ -1,8 +1,7 @@
-package com.joaoporfolio.dslist.controllers;
+package com.joaoportfolio.dslist.controllers;
 
-import com.joaoporfolio.dslist.dto.GameMinDTO;
-import com.joaoporfolio.dslist.entities.Game;
-import com.joaoporfolio.dslist.services.GameService;
+import com.joaoportfolio.dslist.dto.GameMinDTO;
+import com.joaoportfolio.dslist.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

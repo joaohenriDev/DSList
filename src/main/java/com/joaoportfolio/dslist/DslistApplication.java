@@ -1,4 +1,4 @@
-package com.joaoporfolio.dslist;
+package com.joaoportfolio.dslist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

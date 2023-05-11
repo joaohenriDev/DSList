@@ -1,7 +1,6 @@
-package com.joaoporfolio.dslist.dto;
+package com.joaoportfolio.dslist.dto;
 
-import com.joaoporfolio.dslist.entities.Game;
-import jakarta.persistence.Column;
+import com.joaoportfolio.dslist.entities.Game;
 
 public class GameMinDTO {
     private Long id;

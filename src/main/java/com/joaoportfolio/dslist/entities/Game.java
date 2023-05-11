@@ -1,4 +1,4 @@
-package com.joaoporfolio.dslist.entities;
+package com.joaoportfolio.dslist.entities;
 
 
 import jakarta.persistence.Entity;

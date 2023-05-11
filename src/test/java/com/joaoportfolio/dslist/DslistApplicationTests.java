@@ -1,4 +1,4 @@
-package com.joaoporfolio.dslist;
+package com.joaoportfolio.dslist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
