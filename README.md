@@ -18,7 +18,7 @@ A aplicação consiste em uma lista de games separadas por categorias , onde voc
 - JPA / Hibernação
 - Maven
 
-#Implantação em produção
+# Implantação em produção
 * Back end: Railway
 * Banco de dados: Postgresql
 
